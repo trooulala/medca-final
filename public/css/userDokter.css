@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* content left */
+
+.wrapper-content {
+    min-height: calc(100vh - 59px);
+    min-width: calc(100vw - 1200px);
+    background-color: #fbc8c8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.wrapper-content .wrap-list-pasien {
+    height: 750px;
+    width: 600px;
+    background-color: #ffff;
+    margin: 20px 90px;
+    box-shadow: 22px 22px 136px rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+}
+
+.wrapper-content .wrap-list-pasien header {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-bottom: 35px;
+    margin-top: 20px;
+    /* margin-top: 20px; */
+}
+
+.list-pasien {
+    overflow: auto;
+    scroll-behavior: smooth;
+    margin: auto;
+    /* padding-left: 25px; */
+    width: 500px;
+    height: 600px;
+    background-color: transparent;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.list-pasien::-webkit-scrollbar {
+    display: none;
+}
+
+.card-pasien-1 {
+    display: block;
+    background-color: #eaeced;
+    width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    /* margin-left: 75px;
+    margin-top: 10px;
+    margin-bottom: 25px; */
+    border-radius: 40px;
+}
+
+.wrap-pasien {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.box-txt {
+    margin-left: 15px;
+}
+
+.wrap-pasien h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #85636c;
+}
+
+.box-txt p {
+    margin-top: 10px;
+    line-height: 10px;
+    font-size: 12px;
+    color: #721c24;
+}
+
+button.terima-btn {
+    border-radius: 15px;
+    padding: 6px;
+    border: none;
+    color: #ffff;
+    background: linear-gradient(
+        105deg,
+        #1b5738 0%,
+        rgba(17, 119, 67, 0.98) 109.37%
+    );
+    margin-bottom: 10px;
+    width: 90px;
+}
+button.tolak-btn {
+    border-radius: 15px;
+    padding: 6px;
+    border: none;
+    color: #ffff;
+    background: linear-gradient(
+        105deg,
+        #b91f1f 0%,
+        rgba(192, 90, 90, 0.98) 109.37%
+    );
+    margin-bottom: 10px;
+    width: 90px;
+}
+
+.wrap-h4 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrap-btn {
+    padding-left: 20px;
+}
+
+/* content right */
+
+.wrap-recap-dokter {
+    padding: 10px;
+    float: right;
+    display: grid;
+    grid-template-rows: center;
+    height: 300px;
+    width: 600px;
+    background: linear-gradient(
+        102.12deg,
+        #1d82a2 -31.12%,
+        #76c1d9 34.5%,
+        #cae6fa 89.97%
+    );
+    border-radius: 20px;
+    box-shadow: 22px 22px 136px rgba(0, 0, 0, 0.25);
+}
+
+.profile-dokter {
+    margin-top: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 70px;
+    margin-bottom: 85px;
+}
+
+.profile-dokter img {
+    margin: auto;
+}
+
+.box-txt-wrap-bio {
+    margin: auto;
+}
+
+.box-txt-wrap-bio p {
+    color: #ffff;
+    text-align: end;
+}
+
+.box-txt-wrap-bio h1 {
+    font-weight: bold;
+    color: #512828;
+}
+
+.wrap-kepuasan-pasien {
+    width: 320px;
+    height: 410px;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 70px;
+    box-shadow: 22px 22px 136px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-kepuasan-pasien h1 {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.field-response {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.field-response img {
+    margin-right: 35px;
+}
+
+.field-response h2 {
+    font-weight: 700;
+    background: linear-gradient(
+        103.25deg,
+        #d5ba23 -50.07%,
+        #fee031 62.42%,
+        rgba(169, 146, 15, 0.99) 239.21%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.wrap-response-pasien {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-pasien {
+    width: 390px;
+    height: 410px;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 70px;
+    box-shadow: 22px 22px 136px rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-pasien header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.wrap-list-pasien img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.message-box {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.message-box label {
+    color: #85636c;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: medium;
+    font-weight: 700;
+    font-family: "Roboto";
+}
+
+.message-box p {
+    color: #120b0d;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: medium;
+    font-family: "Roboto";
+}
